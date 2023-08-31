@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+.show #carouselExampleCaptions .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-brand .img-fluid {
+  height: 160px;
+  max-width: 350px;
+  margin-left: 6px;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .navbar #btnBars {
+  display: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: darkred;
+  border: transparent;
+  background: transparent;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-nav {
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 15px;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-nav #btnLog {
+  margin-bottom: 7px;
+  color: azure;
+  cursor: pointer;
+  font-size: 1.6em;
+  border: transparent;
+  background: transparent;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow #tesSaga {
+  margin: auto;
+  display: block;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames {
+  display: none;
+  margin-top: -40px;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames .row {
+  text-align: center;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames .row .img-fluid {
+  cursor: pointer;
+  margin: 20px auto;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames.show {
+  display: block;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames.hide {
+  display: none;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow #btnShow {
+  margin: 20px auto;
+  display: block;
+  font-size: 1.4em;
+  background: transparent;
+}
+
+@font-face {
+  font-family: planewalker;
+  src: url("/assets/fonts/theElderScrolls/Planewalker.otf");
+}
+@font-face {
+  font-family: overseer;
+  src: url("/assets/fonts/Fallout/Overseer.otf");
+}
+@font-face {
+  font-family: conthrax;
+  src: url("/assets/fonts/Starfield/conthrax-sb.otf");
+}/*# sourceMappingURL=styles.css.map */

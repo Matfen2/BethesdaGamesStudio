@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: block;
+}
+
+// MIXIN & ROOT
+@mixin flex ($flexDirection) {
+    display: flex;
+    align-items: center;
+    flex-direction: $flexDirection;
+}
+
+$firstColor: azure;
+$secondColor: darkred;
+$thirdColor: rgb(126, 235, 18);
+
+.show {
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel-item {
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                .navbar {
+                    @include flex (row);
+                    justify-content: space-between;
+                    .navbar-brand {
+                        .img-fluid {
+                            height: 160px;
+                            max-width: 350px;
+                            margin-left: 6px;
+                        }
+                    }
+                    #btnBars {
+                        display: none;
+                        cursor: pointer;
+                        font-size: 1.2em;
+                        color: $secondColor;
+                        border: transparent;
+                        background: transparent;
+                    }
+                    .navbar-nav {
+                        align-items: center;
+                        column-gap: 60px;
+                        margin-right: 15px;
+                        .nav-item {
+                            .nav-link {
+                                font-size: 1.4em; 
+                            }
+                        }
+                        #btnLog {
+                            margin-bottom: 7px;
+                            color: $firstColor;
+                            cursor: pointer;
+                            font-size: 1.6em;
+                            border: transparent;
+                            background: transparent;
+                        }
+                    }
+                }
+                .containShow {
+                    #tesSaga {
+                        margin: auto;
+                        display: block;
+                    }
+                    .showGames {
+                        display: none;
+                        margin-top: -40px;
+                        .row {
+                            text-align: center;
+                            .img-fluid {
+                                cursor: pointer;
+                                margin: 20px auto;
+                            }
+                        }
+                        &.show {
+                            display: block;
+                        }
+                        &.hide {
+                            display: none;
+                        }
+                    }
+                    #btnShow {
+                        margin: 20px auto;
+                        display: block;
+                        font-size: 1.4em;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FONTS
+@font-face {
+    font-family: planewalker;
+    src: url('/assets/fonts/theElderScrolls/Planewalker.otf');
+}
+
+@font-face {
+    font-family: overseer;
+    src: url('/assets/fonts/Fallout/Overseer.otf');
+}
+
+@font-face {
+    font-family: conthrax;
+    src: url('/assets/fonts/Starfield/conthrax-sb.otf');
+}
