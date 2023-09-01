@@ -22,14 +22,15 @@ body {
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-brand .img-fluid {
   height: 160px;
+  cursor: pointer;
   max-width: 350px;
   margin-left: 6px;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar #btnBars {
   display: none;
   cursor: pointer;
-  font-size: 1.2em;
-  color: darkred;
+  font-size: 1.5em;
+  color: azure;
   border: transparent;
   background: transparent;
 }
@@ -50,32 +51,364 @@ body {
   border: transparent;
   background: transparent;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow #tesSaga {
+.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row {
+  margin-top: -70px;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row .col-lg-4 .img-fluid {
+  margin: 16px auto;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames.hide {
+  display: none;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames.show {
+  display: block;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #btnShow {
   margin: auto;
   display: block;
+  position: relative;
+  top: 50%;
+  left: 0%;
+  font-size: 1.4em;
+  transform: translate(-30%, -50%);
+  background: transparent;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames {
-  display: none;
-  margin-top: -40px;
+.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #btnShow.show {
+  transform: translate(-40%, 40%);
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames .row {
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow {
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #falloutSaga {
   text-align: center;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames .row .img-fluid {
-  cursor: pointer;
-  margin: 20px auto;
-}
-.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames.show {
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #falloutSaga.show {
+  margin: auto;
   display: block;
+  margin-left: 128px;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow .showGames.hide {
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row {
+  margin-top: -40px;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row .col-lg-4 .img-fluid {
+  margin: 16px auto;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames.hide {
   display: none;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item .containShow #btnShow {
-  margin: 20px auto;
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames.show {
   display: block;
-  font-size: 1.4em;
+  margin: 30px auto;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #btnShow {
+  margin: auto;
+  display: block;
+  font-size: 1.6em;
   background: transparent;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #btnShow.show {
+  margin-left: 280px;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow.show {
+  top: 60%;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow #starfieldSaga {
+  height: 450px;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow .showGames .row {
+  margin-top: -70px;
+  margin-left: -20px;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow .showGames .row .col-lg-12 .img-fluid {
+  display: block;
+  text-align: center;
+  margin: 16px auto;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow .showGames.hide {
+  display: none;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow .showGames.show {
+  display: block;
+  margin: 10px auto;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow #btnShow {
+  margin: auto;
+  display: block;
+  font-size: 1.3em;
+  background: transparent;
+}
+
+.tes {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.tes::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("/assets/picts/theElderScrolls/theElderScrollsWallpaper.jpg");
+}
+.tes .navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tes .navbar .navbar-brand .img-fluid {
+  height: 160px;
+  cursor: pointer;
+  max-width: 350px;
+  margin-left: 6px;
+}
+.tes .navbar #btnBars {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.tes .navbar .navbar-nav {
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 15px;
+}
+.tes .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+}
+.tes .navbar .navbar-nav #btnLog {
+  margin-bottom: 7px;
+  color: azure;
+  cursor: pointer;
+  font-size: 1.6em;
+  border: transparent;
+  background: transparent;
+}
+.tes .showGame {
+  margin: 25px auto;
+}
+.tes .showGame .containGame .row {
+  -moz-column-gap: -30px;
+       column-gap: -30px;
+}
+.tes .showGame .containGame .row .col-lg-4 {
+  text-align: center;
+}
+.tes .showGame .containGame .row .col-lg-4 .img-fluid {
+  text-align: center;
+  height: 280px;
+  max-width: 300px;
+}
+.tes .showGame .containGame .row .col-lg-8 {
+  margin-left: -50px;
+}
+.tes .showGame .containGame .row .col-lg-8 h2 {
+  color: azure;
+  text-shadow: 0px 3px 2px #000000;
+}
+.tes .showGame .containGame .row .col-lg-8 p {
+  line-height: 50px;
+  font-size: 1.5em;
+  color: azure;
+}
+.tes .showGame .containGame video {
+  margin: 30px auto;
+  display: block;
+}
+
+.fallout {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.fallout::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("/assets/picts/fallout/falloutWallpaper.jpg");
+}
+.fallout .navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fallout .navbar .navbar-brand .img-fluid {
+  height: 160px;
+  cursor: pointer;
+  max-width: 350px;
+  margin-left: 6px;
+}
+.fallout .navbar #btnBars {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.fallout .navbar .navbar-nav {
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 15px;
+}
+.fallout .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+}
+.fallout .navbar .navbar-nav #btnLog {
+  margin-bottom: 7px;
+  color: azure;
+  cursor: pointer;
+  font-size: 1.6em;
+  border: transparent;
+  background: transparent;
+}
+.fallout .showGame {
+  margin: 25px auto;
+}
+.fallout .showGame .containGame .row {
+  -moz-column-gap: -30px;
+       column-gap: -30px;
+}
+.fallout .showGame .containGame .row .col-lg-4 {
+  text-align: center;
+}
+.fallout .showGame .containGame .row .col-lg-4 .img-fluid {
+  text-align: center;
+  height: 280px;
+  max-width: 300px;
+}
+.fallout .showGame .containGame .row .col-lg-8 {
+  margin-left: -50px;
+}
+.fallout .showGame .containGame .row .col-lg-8 h2 {
+  color: azure;
+  text-shadow: 0px 3px 2px #000000;
+}
+.fallout .showGame .containGame .row .col-lg-8 p {
+  line-height: 50px;
+  font-size: 1.5em;
+  color: azure;
+}
+.fallout .showGame .containGame video {
+  margin: 30px auto;
+  display: block;
+}
+
+.starfield {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.starfield::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("/assets/picts/starfield/starfieldWallpaper.png");
+}
+.starfield .navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.starfield .navbar .navbar-brand .img-fluid {
+  height: 160px;
+  cursor: pointer;
+  max-width: 350px;
+  margin-left: 6px;
+}
+.starfield .navbar #btnBars {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.starfield .navbar .navbar-nav {
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 15px;
+}
+.starfield .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+}
+.starfield .navbar .navbar-nav #btnLog {
+  margin-bottom: 7px;
+  color: azure;
+  cursor: pointer;
+  font-size: 1.6em;
+  border: transparent;
+  background: transparent;
+}
+.starfield .showGame {
+  margin: 25px auto;
+}
+.starfield .showGame .containGame .row {
+  -moz-column-gap: -30px;
+       column-gap: -30px;
+}
+.starfield .showGame .containGame .row .col-lg-4 {
+  text-align: center;
+}
+.starfield .showGame .containGame .row .col-lg-4 .img-fluid {
+  text-align: center;
+  height: 280px;
+  max-width: 300px;
+}
+.starfield .showGame .containGame .row .col-lg-8 {
+  margin-left: -50px;
+}
+.starfield .showGame .containGame .row .col-lg-8 h2 {
+  color: azure;
+  text-shadow: 0px 3px 2px #000000;
+}
+.starfield .showGame .containGame .row .col-lg-8 p {
+  line-height: 50px;
+  font-size: 1.5em;
+  color: azure;
+}
+.starfield .showGame .containGame video {
+  margin: 30px auto;
+  display: block;
 }
 
 @font-face {
@@ -89,4 +422,41 @@ body {
 @font-face {
   font-family: conthrax;
   src: url("/assets/fonts/Starfield/conthrax-sb.otf");
+}
+@media screen and (max-width: 1440px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #tesSaga {
+    margin-left: 30px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #btnShow {
+    transform: translate(-10%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #btnShow.show {
+    transform: translate(-10%, 10%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow #starfieldSaga {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar #btnBars {
+    display: block;
+    margin-right: 20px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames {
+    overflow-y: auto;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row {
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-brand .img-fluid {
+    height: 120px;
+    max-width: 150px;
+  }
 }/*# sourceMappingURL=styles.css.map */

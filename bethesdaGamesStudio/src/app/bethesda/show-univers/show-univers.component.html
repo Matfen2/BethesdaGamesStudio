@@ -9,7 +9,7 @@
             <div class="carousel-item active" style="background-image: url('/assets/picts/theElderScrolls/theElderScrollsBackground.jpg');">
                 <nav class="navbar navbar-expand-lg">
                     <div class="navbar-brand">
-                        <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" />
+                        <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" routerLink="/show-univers" />
                     </div>
                     <button type="button" id="btnBars" data-bs-toggle="offcanvas" data-bs-target="#sideCanvas"><i class="fas fa-bars"></i></button>
                     <div class="navbar-nav">
@@ -19,37 +19,22 @@
                         <button type="button" id="btnLog"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
                     </div>
                 </nav>
-                <div class="containShow">
-                    <img src="/assets/picts/theElderScrolls/theElderScrollsLogo.png" class="img-fluid" id="tesSaga" alt="theElderScrollLogo" />
+                <div class="containShow" id="tesShow">
+                    <img src="/assets/picts/theElderScrolls/theElderScrollsLogo.png" class="img-fluid w-100" id="tesSaga" alt="theElderScrollLogo" />
                     <div class="showGames" [class.show]="gamesShow === 1" [class.hide]="gamesShow !== 1">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <img src="/assets/picts/theElderScrolls/TES1Arena.jpg" class="img-fluid w-100" style="height: 180px; max-width: 180px" alt="tesGame" />
-                            </div>
-                            <div class="col-lg-4">
-                                <img src="/assets/picts/theElderScrolls/TES2Daggerfall.jpg" class="img-fluid w-100" style="height: 180px; max-width: 180px" alt="tesGame" />
-                            </div>
-                            <div class="col-lg-4">
-                                <img src="/assets/picts/theElderScrolls/TES3Morrowind.png" class="img-fluid w-100" style="height: 180px; max-width: 180px" alt="tesGame" />
-                            </div>
-                            <div class="col-lg-4">
-                                <img src="/assets/picts/theElderScrolls/TES4Oblivion.png" class="img-fluid w-100" style="height: 180px; max-width: 180px" alt="tesGame" />
-                            </div>
-                            <div class="col-lg-4">
-                                <img src="/assets/picts/theElderScrolls/TES5Skyrim.jpg" class="img-fluid w-100" style="height: 180px; max-width: 180px" alt="tesGame" />
-                            </div>
-                            <div class="col-lg-4">
-                                <img src="/assets/picts/theElderScrolls/TESOnline.jpg" class="img-fluid w-100" style="height: 180px; max-width: 180px" alt="tesGame" />
+                            <div class="col-lg-4 col-md-4 col-sm-12" [id]="first.id" *ngFor="let first of firstSaga">
+                                <img [src]="first.pict" class="img-fluid w-100" style="height: 180px; max-width: 180px" alt="tesGame" [routerLink]="['/the-elder-scrolls', first.id]"/>
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="btnShow" style="color: azure; font-family: planewalker; border: 2px solid azure" (click)="showUnivers(1)">{{ gamesShow === 1 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
+                    <button type="button" id="btnShow" style="color: azure; font-family: planewalker; border: 2px solid azure" (click)="showUnivers(1)" [class.show]="gamesShow === 1" [class.hide]="gamesShow !== 1">{{ gamesShow === 1 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
                 </div>
             </div>
             <div class="carousel-item" style="background-image: url('/assets/picts/fallout/falloutBackground.jpg');">
             <nav class="navbar navbar-expand-lg">
                     <div class="navbar-brand">
-                        <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" />
+                        <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" routerLink="/show-univers" />
                     </div>
                     <button type="button" id="btnBars" data-bs-toggle="offcanvas" data-bs-target="#sideCanvas"><i class="fas fa-bars"></i></button>
                     <div class="navbar-nav">
@@ -59,37 +44,22 @@
                         <button type="button" id="btnLog" style="color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
                     </div>
                 </nav>
-                <div class="containShow">
-                    <img src="/assets/picts/fallout/falloutLogo.png" class="img-fluid" id="falloutSaga" alt="theElderScrollLogo" />
+                <div class="containShow" id="falloutShow" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2">
+                    <img src="/assets/picts/fallout/falloutLogo.png" class="img-fluid w-100" id="falloutSaga" style="height: 200px; max-width: 450px" alt="falloutLogo" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2" />
                     <div class="showGames" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2">
                         <div class="row">
-                            <div class="col-lg-2">
-                                <img src="/assets/picts/fallout/fallout1.jpg" class="img-fluid w-100" style="height: 150px; max-width: 180px" alt="falloutGame" />
-                            </div>
-                            <div class="col-lg-2">
-                                <img src="/assets/picts/fallout/fallout2.jpg" class="img-fluid w-100" style="height: 150px; max-width: 180px" alt="falloutGame" />
-                            </div>
-                            <div class="col-lg-2">
-                                <img src="/assets/picts/fallout/fallout3.jpg" class="img-fluid w-100" style="height: 150px; max-width: 180px" alt="falloutGame" />
-                            </div>
-                            <div class="col-lg-2">
-                                <img src="/assets/picts/fallout/falloutNewVegas.jpg" class="img-fluid w-100" style="height: 150px; max-width: 180px" alt="falloutGame" />
-                            </div>
-                            <div class="col-lg-2">
-                                <img src="/assets/picts/fallout/fallout4.jpg" class="img-fluid w-100" style="height: 150px; max-width: 180px" alt="falloutGame" />
-                            </div>
-                            <div class="col-lg-2">
-                                <img src="/assets/picts/fallout/fallout76.jpg" class="img-fluid w-100" style="height: 150px; max-width: 180px" alt="falloutGame" />
+                            <div class="col-lg-4 col-md-4 col-sm-12" [id]="second.id" *ngFor="let second of secondSaga">
+                                <img [src]="second.pict" class="img-fluid w-100" style="height: 150px; max-width: 180px" alt="falloutGame" [routerLink]="['/fallout', second.id]"/>
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="btnShow" (click)="showUnivers(2)">{{ gamesShow === 2 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
+                    <button type="button" id="btnShow" style="border: 2px solid rgb(126, 235, 18); color: rgb(126, 235, 18); font-family: overseer" (click)="showUnivers(2)" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2">{{ gamesShow === 2 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
                 </div>
             </div>
             <div class="carousel-item" style="background-image: url('/assets/picts/starfield/starfieldBackground.jpg');">
             <nav class="navbar navbar-expand-lg">
                     <div class="navbar-brand">
-                        <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" />
+                        <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" routerLink="/show-univers" />
                     </div>
                     <button type="button" id="btnBars" data-bs-toggle="offcanvas" data-bs-target="#sideCanvas"><i class="fas fa-bars"></i></button>
                     <div class="navbar-nav">
@@ -99,16 +69,16 @@
                         <button type="button" id="btnLog"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
                     </div>
                 </nav>
-                <div class="containShow">
-                    <img src="/assets/picts/starfield/starfieldLogo.png" class="img-fluid" id="starfieldSaga" alt="theElderScrollLogo" />
+                <div class="containShow" id="starfieldShow">
+                    <img src="/assets/picts/starfield/starfieldLogo.png" class="img-fluid w-100" id="starfieldSaga" alt="starfieldLogo" />
                     <div class="showGames" [class.show]="gamesShow === 3" [class.hide]="gamesShow !== 3">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <img src="/assets/picts/starfield/starfield.jpg" class="img-fluid w-100" style="height: 150px; max-width: 180px" alt="starfieldGame" />
+                            <div class="col-lg-12 col-md-12 col-sm-12" [id]="third.id" *ngFor="let third of thirdSaga">
+                                <img [src]="third.pict" class="img-fluid w-100" style="height: 220px; max-width: 180px" alt="starfieldGame" [routerLink]="['/starfield', third.id]"/>
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="btnShow" (click)="showUnivers(3)">{{ gamesShow === 3 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
+                    <button type="button" id="btnShow" style="border: 2px solid azure; color: azure; font-family: conthrax" (click)="showUnivers(3)" [class.show]="gamesShow === 3" [class.hide]="gamesShow !== 3">{{ gamesShow === 3 ? 'Masquer le Jeu' : 'Voir le Jeu'}}</button>
                 </div>
             </div>
         </div>
