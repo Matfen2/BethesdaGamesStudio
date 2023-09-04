@@ -153,17 +153,119 @@ body {
   background: transparent;
 }
 
+#sideTes {
+  max-width: 150px;
+  height: 205px;
+  border: 1px solid azure;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideTes .offcanvas-body {
+  border: 1px solid azure;
+  background-color: black;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideTes .offcanvas-body #btnCloseCanvas {
+  position: relative;
+  top: -6px;
+  left: 82%;
+  font-size: 1.4em;
+  color: darkred;
+  border: transparent;
+  background: transparent;
+}
+#sideTes .offcanvas-body .navbar {
+  margin-left: 10px;
+  margin-top: -14px;
+}
+#sideTes .offcanvas-body .navbar .navbar-nav {
+  line-height: 25px;
+  text-align: center;
+}
+#sideTes .offcanvas-body .navbar .navbar-nav .nav-item {
+  font-size: 1.1em;
+  color: azure;
+  font-family: planewalker;
+}
+
+#sideFallout {
+  max-width: 150px;
+  height: 205px;
+  border: 1px solid azure;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideFallout .offcanvas-body {
+  border: 1px solid azure;
+  background-color: black;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideFallout .offcanvas-body #btnCloseCanvas {
+  position: relative;
+  top: -6px;
+  left: 82%;
+  font-size: 1.4em;
+  color: darkred;
+  border: transparent;
+  background: transparent;
+}
+#sideFallout .offcanvas-body .navbar {
+  margin-left: 10px;
+  margin-top: -14px;
+}
+#sideFallout .offcanvas-body .navbar .navbar-nav {
+  line-height: 25px;
+  text-align: center;
+  margin-left: 15px;
+}
+#sideFallout .offcanvas-body .navbar .navbar-nav .nav-item {
+  font-size: 1.4em;
+  color: azure;
+  font-family: overseer;
+}
+
+#sideStar {
+  max-width: 150px;
+  height: 205px;
+  border: 1px solid azure;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideStar .offcanvas-body {
+  border: 1px solid azure;
+  background-color: black;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideStar .offcanvas-body #btnCloseCanvas {
+  position: relative;
+  top: -6px;
+  left: 82%;
+  font-size: 1.4em;
+  color: darkred;
+  border: transparent;
+  background: transparent;
+}
+#sideStar .offcanvas-body .navbar {
+  margin-left: 10px;
+  margin-top: -14px;
+}
+#sideStar .offcanvas-body .navbar .navbar-nav {
+  text-align: center;
+  line-height: 25px;
+  margin-left: -8px;
+}
+#sideStar .offcanvas-body .navbar .navbar-nav .nav-item {
+  font-size: 1em;
+  color: azure;
+  font-family: conthrax;
+}
+
 .tes {
   width: 100%;
-  height: 100vh;
-  position: relative;
 }
 .tes::before {
   content: "";
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 100%;
+  height: 127vh;
   opacity: 0.85;
   background-size: cover;
   background-position: center;
@@ -210,6 +312,9 @@ body {
 .tes .showGame {
   margin: 25px auto;
 }
+.tes .showGame .containGame {
+  padding: 10px;
+}
 .tes .showGame .containGame .row {
   -moz-column-gap: -30px;
        column-gap: -30px;
@@ -219,37 +324,70 @@ body {
 }
 .tes .showGame .containGame .row .col-lg-4 .img-fluid {
   text-align: center;
-  height: 280px;
+  height: 320px;
   max-width: 300px;
 }
 .tes .showGame .containGame .row .col-lg-8 {
-  margin-left: -50px;
+  line-height: 40px;
+  margin-left: -100px;
 }
 .tes .showGame .containGame .row .col-lg-8 h2 {
+  font-size: 2.5em;
   color: azure;
   text-shadow: 0px 3px 2px #000000;
 }
+.tes .showGame .containGame .row .col-lg-8 .listType {
+  margin-left: -20px;
+}
+.tes .showGame .containGame .row .col-lg-8 .listType button {
+  padding: 2px;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: azure;
+  border: 2px solid azure;
+  font-family: planewalker;
+  background: transparent;
+}
 .tes .showGame .containGame .row .col-lg-8 p {
-  line-height: 50px;
+  overflow: auto;
+  line-height: 55px;
   font-size: 1.5em;
   color: azure;
 }
 .tes .showGame .containGame video {
-  margin: 30px auto;
+  margin: 50px auto;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tes .showGame .containGame #btnBuy {
+  letter-spacing: 5px;
+  font-size: 1.4em;
+  display: block;
+  margin: -10px auto;
+  border: 1px solid azure;
+  background: transparent;
+  transition: all 0.25ms ease;
+}
+.tes .showGame .containGame #btnBuy a {
+  font-family: planewalker;
+  color: azure;
+  text-decoration: none;
+}
+.tes .showGame .containGame #btnBuy:active {
+  transform: translateY(10px);
 }
 
 .fallout {
   width: 100%;
-  height: 100vh;
-  position: relative;
 }
 .fallout::before {
   content: "";
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 100%;
+  height: 127vh;
   opacity: 0.85;
   background-size: cover;
   background-position: center;
@@ -296,6 +434,9 @@ body {
 .fallout .showGame {
   margin: 25px auto;
 }
+.fallout .showGame .containGame {
+  padding: 10px;
+}
 .fallout .showGame .containGame .row {
   -moz-column-gap: -30px;
        column-gap: -30px;
@@ -305,24 +446,59 @@ body {
 }
 .fallout .showGame .containGame .row .col-lg-4 .img-fluid {
   text-align: center;
-  height: 280px;
+  height: 260px;
   max-width: 300px;
 }
 .fallout .showGame .containGame .row .col-lg-8 {
-  margin-left: -50px;
+  line-height: 40px;
+  margin-left: -100px;
 }
 .fallout .showGame .containGame .row .col-lg-8 h2 {
+  font-size: 2.5em;
   color: azure;
   text-shadow: 0px 3px 2px #000000;
 }
+.fallout .showGame .containGame .row .col-lg-8 .listType {
+  margin-left: -20px;
+}
+.fallout .showGame .containGame .row .col-lg-8 .listType button {
+  padding: 2px;
+  font-size: 1.8em;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: azure;
+  border: 2px solid azure;
+  font-family: overseer;
+  background: transparent;
+}
 .fallout .showGame .containGame .row .col-lg-8 p {
-  line-height: 50px;
+  overflow: auto;
+  line-height: 45px;
   font-size: 1.5em;
   color: azure;
 }
 .fallout .showGame .containGame video {
-  margin: 30px auto;
+  margin: 50px auto;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fallout .showGame .containGame #btnBuy {
+  letter-spacing: 5px;
+  font-size: 1.6em;
+  display: block;
+  margin: -10px auto;
+  border: 1px solid azure;
+  background: transparent;
+  transition: all 0.25ms ease;
+}
+.fallout .showGame .containGame #btnBuy a {
+  font-family: overseer;
+  color: azure;
+  text-decoration: none;
+}
+.fallout .showGame .containGame #btnBuy:active {
+  transform: translateY(10px);
 }
 
 .starfield {
@@ -335,7 +511,7 @@ body {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 100%;
+  height: 127vh;
   opacity: 0.85;
   background-size: cover;
   background-position: center;
@@ -395,11 +571,26 @@ body {
   max-width: 300px;
 }
 .starfield .showGame .containGame .row .col-lg-8 {
-  margin-left: -50px;
+  line-height: 40px;
+  margin-left: -100px;
 }
 .starfield .showGame .containGame .row .col-lg-8 h2 {
+  font-size: 2.5em;
   color: azure;
   text-shadow: 0px 3px 2px #000000;
+}
+.starfield .showGame .containGame .row .col-lg-8 .listType {
+  margin-left: -20px;
+}
+.starfield .showGame .containGame .row .col-lg-8 .listType button {
+  padding: 2px;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: azure;
+  border: 2px solid azure;
+  font-family: conthrax;
+  background: transparent;
 }
 .starfield .showGame .containGame .row .col-lg-8 p {
   line-height: 50px;
@@ -407,8 +598,27 @@ body {
   color: azure;
 }
 .starfield .showGame .containGame video {
-  margin: 30px auto;
+  margin: 50px auto;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.starfield .showGame .containGame #btnBuy {
+  letter-spacing: 5px;
+  font-size: 1.6em;
+  display: block;
+  margin: -10px auto;
+  border: 1px solid azure;
+  background: transparent;
+  transition: all 0.25ms ease;
+}
+.starfield .showGame .containGame #btnBuy a {
+  font-family: conthrax;
+  color: azure;
+  text-decoration: none;
+}
+.starfield .showGame .containGame #btnBuy:active {
+  transform: translateY(10px);
 }
 
 @font-face {
@@ -437,6 +647,20 @@ body {
     height: 120px;
   }
 }
+@media screen and (max-width: 1230px) {
+  .tes .showGame .containGame .row .col-lg-8 p, .fallout .showGame .containGame .row .col-lg-8 p, .starfield .showGame .containGame .row .col-lg-8 p {
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .tes .showGame .containGame .row, .fallout .showGame .containGame .row, .starfield .showGame .containGame .row {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .tes .showGame .containGame .row .col-lg-8 p, .fallout .showGame .containGame .row .col-lg-8 p, .starfield .showGame .containGame .row .col-lg-8 p {
+    line-height: 38px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar #btnBars {
     display: block;
@@ -445,6 +669,41 @@ body {
   .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-nav {
     display: none;
   }
+  .tes .navbar #btnBars, .fallout .navbar #btnBars, .starfield .navbar #btnBars {
+    display: block;
+    margin-right: 15px;
+  }
+  .tes .navbar .navbar-nav, .fallout .navbar .navbar-nav, .starfield .navbar .navbar-nav {
+    display: none;
+  }
+  .tes .showGame .containGame .row .col-lg-8 .listType button, .fallout .showGame .containGame .row .col-lg-8 .listType button, .starfield .showGame .containGame .row .col-lg-8 .listType button {
+    font-size: 1.3em;
+  }
+  .tes .showGame .containGame .row .col-lg-8 p, .fallout .showGame .containGame .row .col-lg-8 p, .starfield .showGame .containGame .row .col-lg-8 p {
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tes .showGame .containGame .row .col-lg-4 .img-fluid, .fallout .showGame .containGame .row .col-lg-4 .img-fluid, .starfield .showGame .containGame .row .col-lg-4 .img-fluid {
+    height: 380px;
+  }
+  .tes .showGame .containGame .row .col-lg-8, .fallout .showGame .containGame .row .col-lg-8, .starfield .showGame .containGame .row .col-lg-8 {
+    margin-left: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .tes .showGame .containGame .row .col-lg-8 .listType, .fallout .showGame .containGame .row .col-lg-8 .listType, .starfield .showGame .containGame .row .col-lg-8 .listType {
+    margin-left: 20px;
+  }
+  .tes .showGame .containGame .row .col-lg-8 .listType button, .fallout .showGame .containGame .row .col-lg-8 .listType button, .starfield .showGame .containGame .row .col-lg-8 .listType button {
+    padding: 6px;
+    font-size: 1.3em;
+  }
+  .tes .showGame .containGame .row .col-lg-8 p, .fallout .showGame .containGame .row .col-lg-8 p, .starfield .showGame .containGame .row .col-lg-8 p {
+    margin-top: 10px;
+    overflow: scroll;
+    margin-right: 24px;
+  }
 }
 @media screen and (max-width: 768px) {
   .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames {
@@ -452,11 +711,5 @@ body {
   }
   .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row {
     overflow-y: auto;
-  }
-}
-@media screen and (max-width: 425px) {
-  .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-brand .img-fluid {
-    height: 120px;
-    max-width: 150px;
   }
 }/*# sourceMappingURL=styles.css.map */

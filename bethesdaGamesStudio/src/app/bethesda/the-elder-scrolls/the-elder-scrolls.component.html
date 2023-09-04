@@ -1,7 +1,7 @@
-<div class="tes" routerLink="/show-univers">
+<div class="tes">
     <nav class="navbar navbar-expand-lg">
         <div class="navbar-brand">
-            <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" />
+            <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" routerLink="/show-univers" />
         </div>
         <button type="button" id="btnBars" data-bs-toggle="offcanvas" data-bs-target="#sideCanvas"><i class="fas fa-bars"></i></button>
         <div class="navbar-nav">
@@ -27,7 +27,10 @@
                     <p>{{showOneDetails.describe}}</p>
                 </div>
             </div>
-            <video [src]="showOneDetails.trailer" style="width: 100%; height: 300px; max-width: 900px" autoplay muted control></video>
+            <video controls width="60%" max-width="1200"  height="550">
+                <source [src]="showOneDetails.trailer" type="video/mp4" >
+            </video>
+            <button type="button" id="btnBuy"><a [href]="showOneDetails.buy" class="hrefBuy">ACHETER</a></button>
         </div>
     </div>
 </div>
