@@ -71,12 +71,20 @@ $fourColor: black;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    @include flex (column);
+                    #tesSaga {
+                        margin-left: 57px;
+                    }
                     .showGames {
                         .row {
-                            margin-top: -70px;
+                            margin-top: -60px;
+                            margin-bottom: 30px;
                             .col-lg-4 {
                                 .img-fluid {
+                                    padding: 7px;
                                     margin: 16px auto;
+                                    height: 180px;
+                                    max-width: 180px;
                                 }
                             }
                         }
@@ -87,18 +95,16 @@ $fourColor: black;
                             display: block;
                         }
                     }
-                    #btnShow {
-                        margin: auto;
-                        display: block;
-                        position: relative;
-                        top: 50%;
-                        left: 0%;
-                        font-size: 1.4em;
-                        transform: translate(-30%, -50%);
-                        background: transparent;
-                        &.show {
-                            transform: translate(-40%, 40%);
-                        }
+                }
+                #btnShowTes {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, 200%);
+                    font-size: 1.3em;
+                    background: transparent;
+                    &.show {
+                        transform: translate(-82%, 837%);
                     }
                 }
                 #falloutShow {
@@ -107,6 +113,7 @@ $fourColor: black;
                     left: 24%;
                     transform: translate(-50%, -50%);
                     #falloutSaga {
+                        height: 120px;
                         text-align: center;
                         &.show {
                             margin: auto;
@@ -116,7 +123,7 @@ $fourColor: black;
                     }
                     .showGames {
                         .row {
-                            margin-top: -40px;
+                            margin-top: -30px;
                             .col-lg-4 {
                                 .img-fluid {
                                     margin: 16px auto;
@@ -131,23 +138,22 @@ $fourColor: black;
                             margin: 30px auto;
                         }
                     }
-                    #btnShow {
-                        margin: auto;
-                        display: block;
-                        font-size: 1.6em;
-                        
-                        background: transparent;
-                        &.show {
-                            margin-left: 280px;
-                        }
-                    }
+                }
+                #btnShowFallout {
+                    position: absolute;
+                    top: 55%;
+                    left: 24%;
+                    transform: translate(-50%, 100%);
+                    font-size: 1.3em;
+                    background: transparent;
                     &.show {
-                        top: 60%;
+                        margin-top: -35px;
+                        transform: translate(-71%, 657%);
                     }
                 }
                 #starfieldShow {
                     position: absolute;
-                    top: 60%;
+                    top: 50%;
                     left: 15%;
                     transform: translate(-50%, -50%);
                     #starfieldSaga {
@@ -155,7 +161,7 @@ $fourColor: black;
                     }
                     .showGames {
                         .row {
-                            margin-top: -70px;
+                            margin-top: -92px;
                             margin-left: -20px;
                             .col-lg-12 {
                                 .img-fluid {
@@ -173,11 +179,16 @@ $fourColor: black;
                             margin: 10px auto;
                         }
                     }
-                    #btnShow {
-                        margin: auto;
-                        display: block;
-                        font-size: 1.3em;
-                        background: transparent;
+                }
+                #btnShowStarfield {
+                    position: absolute;
+                    top: 65%;
+                    left: 15%;
+                    transform: translate(-50%, 100%);
+                    font-size: 1.1em;
+                    background: transparent;
+                    &.show {
+                        transform: translate(-50%, 537%);
                     }
                 }
             }
@@ -731,11 +742,52 @@ $fourColor: black;
         #carouselExampleCaptions {
             .carousel-inner {
                 .carousel-item {
-                    #tesShow {
-                        #btnShow {
+                    #btnShowTes {
+                        &.show {
+                            transform: translate(-64%, 767%);
+                        }
+                    }
+                    #falloutShow {
+                        #falloutSaga {
                             &.show {
-                                margin-left: 320px;
+                                position: absolute;
+                                top: -10%;
+                                left: 45%;
+                                transform: translate(-50%, -50%);
                             }
+                        }
+                        .showGames {
+                            .row {
+                                margin-top: 40px;
+                                margin-bottom: -70px;
+                                .col-lg-4 {
+                                    .img-fluid {
+                                        margin: 16px auto;
+                                    }
+                                }
+                            }
+                            &.hide {
+                                display: none;
+                            }
+                            &.show {
+                                display: block;
+                                margin-top: 30px;
+                                margin-left: 200px;
+                            }
+                        }
+                        &.show {
+                            margin-top: 70px;
+                        }
+                    }
+                    #btnShowFallout {
+                        &.show {
+                            margin-top: 14px;
+                            transform: translate(-5%, 657%);
+                        }
+                    }
+                    #btnShowStarfield {
+                         &.show {
+                            transform: translate(-50%, 577%);
                         }
                     }
                 }
@@ -773,6 +825,56 @@ $fourColor: black;
 }
 
 @media screen and (max-width: 1024px) {
+    .show {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    #tesShow {
+                        .showGames {
+                            .row {
+                                margin-top: -50px;
+                            }
+                        }
+                    }
+                    #btnShowTes {
+                        &.show {
+                            transform: translate(-52%, 747%);
+                        }
+                    }
+                    #btnShowFallout {
+                        &.show {
+                            margin-top: 14px;
+                            transform: translate(18%, 657%);
+                        }
+                    }
+                    #starfieldShow {
+                        position: absolute;
+                        top: 70%;
+                        left: 25%;
+                        transform: translate(-50%, -50%);
+                        &.show {
+                            position: absolute;
+                            top: 55%;
+                            left: 25%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    #btnShowStarfield {
+                        position: absolute;
+                        top: 85%;
+                        left: 24%;
+                        transform: translate(-50%, 100%);
+                        &.show {
+                            position: absolute;
+                            top: 88%;
+                            left: 25%;
+                            transform: translate(-50%, 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
     .tes, .fallout, .starfield {
         .showGame {
             .containGame {
@@ -798,6 +900,23 @@ $fourColor: black;
 }
 
 @media screen and (max-width: 991px) {
+    .show {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    .navbar {
+                        #btnBars {
+                            display: block;
+                            margin-right: 10px;
+                        }
+                        .navbar-nav {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .tes, .fallout, .starfield {
         .navbar {
             #btnBars {
@@ -833,6 +952,73 @@ $fourColor: black;
 }
 
 @media screen and (max-width: 768px) {
+    .show {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    #tesShow {
+                        transform: translate(-50%, -50%);
+                        .showGames {
+                            .row {
+                                .col-lg-4 {
+                                    max-width: 260px;
+                                    .img-fluid {
+                                        height: 180px;
+                                        width: 120%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #btnShowTes {
+                        &.show {
+                            transform: translate(-52%, 677%);
+                        }
+                    }
+                    #falloutShow {
+                        margin-left: 30px;
+                        #falloutSaga {
+                            &.show {
+                                position: absolute;
+                                top: -10%;
+                                left: 45%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        .showGames {
+                            .row {
+                                margin-top: 40px;
+                                margin-bottom: -70px;
+                                .col-lg-4 {
+                                    .img-fluid {
+                                        margin: 16px auto;
+                                    }
+                                }
+                            }
+                            &.hide {
+                                display: none;
+                            }
+                            &.show {
+                                display: block;
+                                margin-top: 30px;
+                                margin-left: 200px;
+                            }
+                        }
+                        &.show {
+                            margin-top: 70px;
+                        }
+                    }
+                    #btnShowFallout {
+                        margin-left: 30px;
+                        &.show {
+                            margin-top: 14px;
+                            transform: translate(20%, 657%);
+                        }
+                    }
+                }
+            }
+        }
+    }
     .tes {
         .footer {
             .copyrigth {
@@ -910,6 +1096,110 @@ $fourColor: black;
 }
 
 @media screen and (max-width: 425px) {
+    .show {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    #tesShow {
+                        transform: translate(-50%, -50%);
+                        #tesSaga {
+                            height: 120px;
+                            margin-right: 25px;
+                        }
+                        .showGames {
+                            margin-top: 60px;
+                            margin-right: 30px;
+                            margin-left: 20px;
+                            .row {
+                                max-height: 220px;
+                                overflow: auto;
+                                .col-lg-4 {
+                                    .img-fluid {
+                                        height: 160px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #btnShowTes {
+                        &.show {
+                            transform: translate(-52%, 677%);
+                        }
+                    }
+                    #falloutShow {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        #falloutSaga {
+                            margin-left: -20px;
+                            &.show {
+                                margin-left: 110px;
+                            }
+                        }
+                        .showGames {
+                            margin-top: 60px;
+                            margin-right: 10px;
+                            margin-left: 20px;
+                            .row {
+                                overflow: auto;
+                                max-height: 260px;
+                                .col-lg-4 {
+                                    .row {
+                                        .img-fluid {
+                                            height: 250px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.show {
+                            position: absolute;
+                            margin-left: -100px;
+                            top: 45%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    #btnShowFallout {
+                            position: absolute;
+                            top: 55%;
+                            left: 50%;
+                            transform: translate(-70%, 90%);
+                            &.show {
+                                margin-top: -30px;
+                                transform: translate(-67%, 657%);
+                            }
+                    }
+                    #starfieldShow {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        &.show {
+                            position: absolute;
+                            top: 48%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    #btnShowStarfield {
+                        position: absolute;
+                        top: 65%;
+                        left: 50%;
+                        transform: translate(-50%, 100%);
+                        &.show {
+                            position: absolute;
+                            top: 77%;
+                            left: 50%;
+                            font-size: 1.2em;
+                            transform: translate(-50%, 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
     .tes {
         .footer {
             .copyrigth {
@@ -941,6 +1231,22 @@ $fourColor: black;
 }
 
 @media screen and (max-width: 375px) {
+    .show {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    .navbar {
+                        .navbar-brand {
+                            .img-fluid {
+                                height: 150px;
+                                max-width: 220px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .tes, .fallout, .starfield {
         .navbar {
             .navbar-brand {
@@ -978,6 +1284,26 @@ $fourColor: black;
 }
 
 @media screen and (max-width: 320px) {
+    .show {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    #btnShowTes {
+                    &.show {
+                        margin-top: 10px;
+                        transform: translate(-47%, 280%);
+                        }
+                    }
+                    #btnShowFallout {
+                        &.show {
+                            margin-top: 10px;
+                            transform: translate(-67%, 280%);
+                        }
+                    }
+                }
+            }
+        }
+    }
     .starfield {
         .footer {
             @include flex (column);

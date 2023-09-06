@@ -22,30 +22,30 @@
                 <div class="containShow" id="tesShow">
                     <img src="/assets/picts/theElderScrolls/theElderScrollsLogo.png" class="img-fluid w-100" id="tesSaga" alt="theElderScrollLogo" />
                     <div class="showGames" [class.show]="gamesShow === 1" [class.hide]="gamesShow !== 1">
-                        <div class="row">
+                        <div class="row" style="overflow: auto">
                             <div class="col-lg-4 col-md-4 col-sm-12" [id]="first.id" *ngFor="let first of firstSaga">
-                                <img [src]="first.pict" class="img-fluid w-100" style="height: 180px; max-width: 180px" alt="tesGame" [routerLink]="['/the-elder-scrolls', first.id]"/>
+                                <img [src]="first.pict" class="img-fluid w-100" alt="tesGame" [routerLink]="['/the-elder-scrolls', first.id]"/>
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="btnShow" style="color: azure; font-family: planewalker; border: 2px solid azure" (click)="showUnivers(1)" [class.show]="gamesShow === 1" [class.hide]="gamesShow !== 1">{{ gamesShow === 1 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
                 </div>
+            <button type="button" id="btnShowTes" style="color: azure; font-family: planewalker; border: 2px solid azure" (click)="showUnivers(1)" [class.show]="gamesShow === 1" [class.hide]="gamesShow !== 1">{{ gamesShow === 1 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
             </div>
             <div class="carousel-item" style="background-image: url('/assets/picts/fallout/falloutBackground.jpg');">
-            <nav class="navbar navbar-expand-lg">
-                    <div class="navbar-brand">
-                        <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" routerLink="/show-univers" />
-                    </div>
-                    <button type="button" id="btnBars" data-bs-toggle="offcanvas" data-bs-target="#sideFallout"><i class="fas fa-bars"></i></button>
-                    <div class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link" style="font-family: overseer; letter-spacing: 4px; font-size: 1.8em; color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000">JEUX</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link" style="font-family: overseer; letter-spacing: 4px; font-size: 1.8em; color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000">MEDIA</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link" style="font-family: overseer; letter-spacing: 4px; font-size: 1.8em; color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000">GOODIES</a></li>
-                        <button type="button" id="btnLog" style="color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
-                    </div>
+                <nav class="navbar navbar-expand-lg">
+                        <div class="navbar-brand">
+                            <img src="/assets/picts/bethesdaLogo.png" class="img-fluid w-100" alt="bethesdaLogo" routerLink="/show-univers" />
+                        </div>
+                        <button type="button" id="btnBars" style="color: rgb(126, 235, 18)" data-bs-toggle="offcanvas" data-bs-target="#sideFallout"><i class="fas fa-bars"></i></button>
+                        <div class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link" style="font-family: overseer; letter-spacing: 4px; font-size: 1.8em; color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000">JEUX</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="font-family: overseer; letter-spacing: 4px; font-size: 1.8em; color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000">MEDIA</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="font-family: overseer; letter-spacing: 4px; font-size: 1.8em; color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000">GOODIES</a></li>
+                            <button type="button" id="btnLog" style="color: rgb(126, 235, 18); text-shadow: 0px 1px 2px #000000"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                        </div>
                 </nav>
                 <div class="containShow" id="falloutShow" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2">
-                    <img src="/assets/picts/fallout/falloutLogo.png" class="img-fluid w-100" id="falloutSaga" style="height: 200px; max-width: 450px" alt="falloutLogo" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2" />
+                    <img src="/assets/picts/fallout/falloutLogo.png" class="img-fluid w-100" id="falloutSaga" style="height: 150px; max-width: 450px" alt="falloutLogo" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2" />
                     <div class="showGames" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-12" [id]="second.id" *ngFor="let second of secondSaga">
@@ -53,8 +53,8 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="btnShow" style="border: 2px solid rgb(126, 235, 18); color: rgb(126, 235, 18); font-family: overseer" (click)="showUnivers(2)" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2">{{ gamesShow === 2 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
                 </div>
+                 <button type="button" id="btnShowFallout" style="border: 2px solid rgb(126, 235, 18); color: rgb(126, 235, 18); font-family: overseer" (click)="showUnivers(2)" [class.show]="gamesShow === 2" [class.hide]="gamesShow !== 2">{{ gamesShow === 2 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
             </div>
             <div class="carousel-item" style="background-image: url('/assets/picts/starfield/starfieldBackground.jpg');">
             <nav class="navbar navbar-expand-lg">
@@ -68,9 +68,9 @@
                         <li class="nav-item"><a href="#" class="nav-link" style="font-family: conthrax; letter-spacing: 2px; color: azure">GOODIES</a></li>
                         <button type="button" id="btnLog"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
                     </div>
-                </nav>
-                <div class="containShow" id="starfieldShow">
-                    <img src="/assets/picts/starfield/starfieldLogo.png" class="img-fluid w-100" id="starfieldSaga" alt="starfieldLogo" />
+            </nav>
+                <div class="containShow" id="starfieldShow" [class.show]="gamesShow === 3" [class.hide]="gamesShow !== 3">
+                    <img src="/assets/picts/starfield/starfieldLogo.png" class="img-fluid w-100" id="starfieldSaga" alt="starfieldLogo"  />
                     <div class="showGames" [class.show]="gamesShow === 3" [class.hide]="gamesShow !== 3">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12" [id]="third.id" *ngFor="let third of thirdSaga">
@@ -78,11 +78,11 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="btnShow" style="border: 2px solid azure; color: azure; font-family: conthrax" (click)="showUnivers(3)" [class.show]="gamesShow === 3" [class.hide]="gamesShow !== 3">{{ gamesShow === 3 ? 'Masquer le Jeu' : 'Voir le Jeu'}}</button>
                 </div>
+                <button type="button" id="btnShowStarfield" style="border: 2px solid azure; color: azure; font-family: conthrax" (click)="showUnivers(3)" [class.show]="gamesShow === 3" [class.hide]="gamesShow !== 3">{{ gamesShow === 3 ? 'Masquer les Jeux' : 'Voir les Jeux'}}</button>
             </div>
         </div>
-</div>
+    </div>
 </div>
 
 <!-- THE ELDER SCROLL OFFCANVAS -->

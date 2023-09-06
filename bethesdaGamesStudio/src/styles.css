@@ -56,12 +56,22 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #tesSaga {
+  margin-left: 57px;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row {
-  margin-top: -70px;
+  margin-top: -60px;
+  margin-bottom: 30px;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row .col-lg-4 .img-fluid {
+  padding: 7px;
   margin: 16px auto;
+  height: 180px;
+  max-width: 180px;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames.hide {
   display: none;
@@ -69,18 +79,16 @@ body {
 .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames.show {
   display: block;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #btnShow {
-  margin: auto;
-  display: block;
-  position: relative;
+.show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowTes {
+  position: absolute;
   top: 50%;
-  left: 0%;
-  font-size: 1.4em;
-  transform: translate(-30%, -50%);
+  left: 50%;
+  transform: translate(-50%, 200%);
+  font-size: 1.3em;
   background: transparent;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #btnShow.show {
-  transform: translate(-40%, 40%);
+.show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowTes.show {
+  transform: translate(-82%, 837%);
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow {
   position: absolute;
@@ -89,6 +97,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #falloutSaga {
+  height: 120px;
   text-align: center;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #falloutSaga.show {
@@ -97,7 +106,7 @@ body {
   margin-left: 128px;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row {
-  margin-top: -40px;
+  margin-top: -30px;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row .col-lg-4 .img-fluid {
   margin: 16px auto;
@@ -109,21 +118,21 @@ body {
   display: block;
   margin: 30px auto;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #btnShow {
-  margin: auto;
-  display: block;
-  font-size: 1.6em;
+.show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout {
+  position: absolute;
+  top: 55%;
+  left: 24%;
+  transform: translate(-50%, 100%);
+  font-size: 1.3em;
   background: transparent;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #btnShow.show {
-  margin-left: 280px;
-}
-.show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow.show {
-  top: 60%;
+.show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout.show {
+  margin-top: -35px;
+  transform: translate(-71%, 657%);
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 15%;
   transform: translate(-50%, -50%);
 }
@@ -131,7 +140,7 @@ body {
   height: 450px;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow .showGames .row {
-  margin-top: -70px;
+  margin-top: -92px;
   margin-left: -20px;
 }
 .show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow .showGames .row .col-lg-12 .img-fluid {
@@ -146,11 +155,16 @@ body {
   display: block;
   margin: 10px auto;
 }
-.show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow #btnShow {
-  margin: auto;
-  display: block;
-  font-size: 1.3em;
+.show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowStarfield {
+  position: absolute;
+  top: 65%;
+  left: 15%;
+  transform: translate(-50%, 100%);
+  font-size: 1.1em;
   background: transparent;
+}
+.show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowStarfield.show {
+  transform: translate(-50%, 537%);
 }
 
 #sideTes {
@@ -704,8 +718,39 @@ body {
   src: url("/assets/fonts/Starfield/conthrax-sb.otf");
 }
 @media screen and (max-width: 1440px) {
-  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #btnShow.show {
-    margin-left: 320px;
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowTes.show {
+    transform: translate(-64%, 767%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #falloutSaga.show {
+    position: absolute;
+    top: -10%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row {
+    margin-top: 40px;
+    margin-bottom: -70px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row .col-lg-4 .img-fluid {
+    margin: 16px auto;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames.hide {
+    display: none;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames.show {
+    display: block;
+    margin-top: 30px;
+    margin-left: 200px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow.show {
+    margin-top: 70px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout.show {
+    margin-top: 14px;
+    transform: translate(-5%, 657%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowStarfield.show {
+    transform: translate(-50%, 577%);
   }
   .tes .showGame .containGame .row .col-lg-8, .fallout .showGame .containGame .row .col-lg-8, .starfield .showGame .containGame .row .col-lg-8 {
     padding-top: 25px;
@@ -727,6 +772,40 @@ body {
   }
 }
 @media screen and (max-width: 1024px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row {
+    margin-top: -50px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowTes.show {
+    transform: translate(-52%, 747%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout.show {
+    margin-top: 14px;
+    transform: translate(18%, 657%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow.show {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowStarfield {
+    position: absolute;
+    top: 85%;
+    left: 24%;
+    transform: translate(-50%, 100%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowStarfield.show {
+    position: absolute;
+    top: 88%;
+    left: 25%;
+    transform: translate(-50%, 100%);
+  }
   .tes .showGame .containGame .row .col-lg-8, .fallout .showGame .containGame .row .col-lg-8, .starfield .showGame .containGame .row .col-lg-8 {
     padding-top: 20px;
     padding-bottom: 35px;
@@ -743,6 +822,13 @@ body {
   }
 }
 @media screen and (max-width: 991px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar #btnBars {
+    display: block;
+    margin-right: 10px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-nav {
+    display: none;
+  }
   .tes .navbar #btnBars, .fallout .navbar #btnBars, .starfield .navbar #btnBars {
     display: block;
     margin-right: 10px;
@@ -767,6 +853,53 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow {
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row .col-lg-4 {
+    max-width: 260px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row .col-lg-4 .img-fluid {
+    height: 180px;
+    width: 120%;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowTes.show {
+    transform: translate(-52%, 677%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow {
+    margin-left: 30px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #falloutSaga.show {
+    position: absolute;
+    top: -10%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row {
+    margin-top: 40px;
+    margin-bottom: -70px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row .col-lg-4 .img-fluid {
+    margin: 16px auto;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames.hide {
+    display: none;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames.show {
+    display: block;
+    margin-top: 30px;
+    margin-left: 200px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow.show {
+    margin-top: 70px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout {
+    margin-left: 30px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout.show {
+    margin-top: 14px;
+    transform: translate(20%, 657%);
+  }
   .tes .footer .copyrigth {
     font-size: 1.3em;
   }
@@ -822,6 +955,94 @@ body {
   }
 }
 @media screen and (max-width: 425px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow {
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #tesSaga {
+    height: 120px;
+    margin-right: 25px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames {
+    margin-top: 60px;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row {
+    max-height: 220px;
+    overflow: auto;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow .showGames .row .col-lg-4 .img-fluid {
+    height: 160px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowTes.show {
+    transform: translate(-52%, 677%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #falloutSaga {
+    margin-left: -20px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow #falloutSaga.show {
+    margin-left: 110px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames {
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row {
+    overflow: auto;
+    max-height: 260px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow .showGames .row .col-lg-4 .row .img-fluid {
+    height: 250px;
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #falloutShow.show {
+    position: absolute;
+    margin-left: -100px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-70%, 90%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout.show {
+    margin-top: -30px;
+    transform: translate(-67%, 657%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #starfieldShow.show {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowStarfield {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowStarfield.show {
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    font-size: 1.2em;
+    transform: translate(-50%, 100%);
+  }
   .tes .footer .copyrigth {
     font-size: 1.2em;
   }
@@ -848,6 +1069,10 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item .navbar .navbar-brand .img-fluid {
+    height: 150px;
+    max-width: 220px;
+  }
   .tes .navbar .navbar-brand .img-fluid, .fallout .navbar .navbar-brand .img-fluid, .starfield .navbar .navbar-brand .img-fluid {
     height: 120px;
     max-width: 240px;
@@ -876,6 +1101,14 @@ body {
   }
 }
 @media screen and (max-width: 320px) {
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowTes.show {
+    margin-top: 10px;
+    transform: translate(-47%, 280%);
+  }
+  .show #carouselExampleCaptions .carousel-inner .carousel-item #btnShowFallout.show {
+    margin-top: 10px;
+    transform: translate(-67%, 280%);
+  }
   .starfield .footer {
     display: flex;
     align-items: center;
