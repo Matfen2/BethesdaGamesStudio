@@ -16,7 +16,7 @@ export class TheElderScrollsComponent implements OnInit {
     {
       id: 1,
       pict: '/assets/picts/theElderScrolls/TES1Arena.jpg',
-      title: 'THE ELDER SCROLLS : ARENA',
+      title: 'THE ELDER SCROLLS : ARENA (1994)',
       typeOne: 'FPS',
       typeTwo: 'BAC-A-SABLE',
       typeThree: 'CHOIX ET CONSEQUENCE',
@@ -29,7 +29,7 @@ export class TheElderScrollsComponent implements OnInit {
     {
       id: 2,
       pict: '/assets/picts/theElderScrolls/TES2Daggerfall.jpg',
-      title: 'THE ELDER SCROLLS II : DAGGERFALL',
+      title: 'THE ELDER SCROLLS II : DAGGERFALL (1996)',
       typeOne: 'FPS',
       typeTwo: 'BAC-A-SABLE',
       typeThree: 'CHOIX ET CONSEQUENCE',
@@ -42,7 +42,7 @@ export class TheElderScrollsComponent implements OnInit {
     {
       id: 3,
       pict: '/assets/picts/theElderScrolls/TES3Morrowind.png',
-      title: 'THE ELDER SCROLLS III : MORROWIND',
+      title: 'THE ELDER SCROLLS III : MORROWIND (2002)',
       typeOne: 'FPS',
       typeTwo: 'BAC-A-SABLE',
       typeThree: 'CHOIX ET CONSEQUENCE',
@@ -55,7 +55,7 @@ export class TheElderScrollsComponent implements OnInit {
     {
       id: 4,
       pict: '/assets/picts/theElderScrolls/TES4Oblivion.png',
-      title: 'THE ELDER SCROLLS IV : OBLIVION',
+      title: 'THE ELDER SCROLLS IV : OBLIVION (2006)',
       typeOne: 'FPS',
       typeTwo: 'BAC-A-SABLE',
       typeThree: 'CHOIX ET CONSEQUENCE',
@@ -68,7 +68,7 @@ export class TheElderScrollsComponent implements OnInit {
     {
       id: 5,
       pict: '/assets/picts/theElderScrolls/TES5Skyrim.jpg',
-      title: 'THE ELDER SCROLLS V : SKYRIM',
+      title: 'THE ELDER SCROLLS V : SKYRIM (2011)',
       typeOne: 'FPS',
       typeTwo: 'BAC-A-SABLE',
       typeThree: 'CHOIX ET CONSEQUENCE',
@@ -81,7 +81,7 @@ export class TheElderScrollsComponent implements OnInit {
     {
       id: 6,
       pict: '/assets/picts/theElderScrolls/TESOnline.jpg',
-      title: 'THE ELDER SCROLLS : ONLINE',
+      title: 'THE ELDER SCROLLS : ONLINE (2014)',
       typeOne: 'MULTIJOUEUR',
       typeTwo: 'BAC-A-SABLE',
       typeThree: 'CHOIX ET CONSEQUENCE',

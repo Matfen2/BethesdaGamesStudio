@@ -290,7 +290,6 @@ $fourColor: black;
 }
 
 .tes {
-    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -353,7 +352,7 @@ $fourColor: black;
                     h2 {
                         font-size: 2.5em;
                         color: $firstColor;
-                        text-shadow: 0px 3px 2px #000000
+                        text-shadow: 4px 3px 8px #6d0303
                     }
                     .listType {
                         margin-left: -20px;
@@ -371,8 +370,10 @@ $fourColor: black;
                     p {
                         overflow: auto;
                         line-height: 55px;
-                        font-size: 1.5em;
+                        font-size: 1.6em;
                         color: $firstColor;
+                        font-family: planewalker;
+                        text-shadow: 0px 3px 2px #000000
                     }
                 }
             }
@@ -396,6 +397,34 @@ $fourColor: black;
                 }
                 &:active {
                     transform: translateY(10px);
+                }
+            }
+        }
+    }
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        @include flex (row);
+        align-items: center;
+        justify-content: space-between;
+        .copyrigth {
+            font-size: 1.6em;
+            color: $firstColor;
+            font-family: planewalker;
+        }
+        .listSocial {
+            column-gap: 30px;
+            @include flex (row);
+            list-style-type: none;
+            .social-item {
+                .social-link {
+                    opacity: 0.7;
+                    font-size: 1.3em;
+                    color: $firstColor;
+                    text-decoration: none;
+                    &:hover {
+                        opacity: 1.0;
+                    }
                 }
             }
         }
@@ -465,8 +494,7 @@ $fourColor: black;
                     h2 {
                         font-size: 2.5em;
                         color: $firstColor;
-                        text-shadow: 0px 3px 2px #000000
-                    }
+                        text-shadow: 4px 3px 8px #6d0303                    }
                     .listType {
                         margin-left: -20px;
                         button {
@@ -483,8 +511,10 @@ $fourColor: black;
                     p {
                         overflow: auto;
                         line-height: 45px;
-                        font-size: 1.5em;
+                        font-size: 1.7em;
                         color: $firstColor;
+                        font-family: overseer;
+                        text-shadow: 0px 3px 2px #000000
                     }
                 }
             }
@@ -508,6 +538,34 @@ $fourColor: black;
                 }
                 &:active {
                     transform: translateY(10px);
+                }
+            }
+        }
+    }
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        @include flex (row);
+        align-items: center;
+        justify-content: space-between;
+        .copyrigth {
+            font-size: 1.6em;
+            color: $firstColor;
+            font-family: overseer;
+        }
+        .listSocial {
+            column-gap: 30px;
+            @include flex (row);
+            list-style-type: none;
+            .social-item {
+                .social-link {
+                    opacity: 0.7;
+                    font-size: 1.3em;
+                    color: $firstColor;
+                    text-decoration: none;
+                    &:hover {
+                        opacity: 1.0;
+                    }
                 }
             }
         }
@@ -576,8 +634,7 @@ $fourColor: black;
                     h2 {
                         font-size: 2.5em;
                         color: $firstColor;
-                        text-shadow: 0px 3px 2px #000000
-                    }
+                        text-shadow: 4px 3px 8px #6d0303                     }
                     .listType {
                         margin-left: -20px;
                         button {
@@ -593,8 +650,10 @@ $fourColor: black;
                     }
                     p {
                         line-height: 50px;
-                        font-size: 1.5em;
+                        font-size: 1.2em;
                         color: $firstColor;
+                        font-family: conthrax;
+                        text-shadow: 0px 3px 2px #000000
                     }
                 }
             }
@@ -618,6 +677,34 @@ $fourColor: black;
                 }
                 &:active {
                     transform: translateY(10px);
+                }
+            }
+        }
+    }
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        @include flex (row);
+        align-items: center;
+        justify-content: space-between;
+        .copyrigth {
+            font-size: 1.6em;
+            color: $firstColor;
+            font-family: conthrax;
+        }
+        .listSocial {
+            column-gap: 30px;
+            @include flex (row);
+            list-style-type: none;
+            .social-item {
+                .social-link {
+                    opacity: 0.7;
+                    font-size: 1.3em;
+                    color: $firstColor;
+                    text-decoration: none;
+                    &:hover {
+                        opacity: 1.0;
+                    }
                 }
             }
         }
@@ -650,6 +737,260 @@ $fourColor: black;
                                 margin-left: 320px;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .tes, .fallout, .starfield {
+        .showGame {
+            .containGame {
+                .row {
+                    .col-lg-8 {
+                        padding-top: 25px;
+                        padding-bottom: 15px;
+                        margin-left: -5%;
+                        h2 {
+                            font-size: 1.7em;
+                        }
+                        p {
+                            line-height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fallout {
+        .footer {
+            padding-right: 20px;
+            padding-left: 20px;
+            .listSocial {
+                margin-top: -14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tes, .fallout, .starfield {
+        .showGame {
+            .containGame {
+                .row {
+                    .col-lg-8 {
+                        padding-top: 20px;
+                        padding-bottom: 35px;
+                        margin-left: -1%;
+                        h2 {
+                            font-size: 1.6em;
+                        }
+                        p {
+                            line-height: 35px;
+                        }
+                    }
+                }
+                video {
+                    width: 89%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .tes, .fallout, .starfield {
+        .navbar {
+            #btnBars {
+                display: block;
+                margin-right: 10px;
+            }
+            .navbar-nav {
+                display: none;
+            }
+        }
+        .showGame {
+            .containGame {
+                .row {
+                    .col-lg-8 {
+                        margin-top: 10px;
+                        h2 {
+                            text-align: center;
+                            font-size: 1.6em;
+                        }
+                        p {
+                            text-align: center;
+                            line-height: 40px;
+                        }
+                    }
+                }
+                video {
+                    margin-top: -20px;
+                    width: 89%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tes {
+        .footer {
+            .copyrigth {
+                font-size: 1.3em;
+            }
+            .listSocial {
+                margin-top: -17px;
+                .social-item {
+                    .social-link {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+    .starfield {
+        .footer {
+            .copyrigth {
+                font-size: 1.1em;
+            }
+            .listSocial {
+                margin-top: -17px;
+                margin-right: 10px;
+                .social-item {
+                    .social-link {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .starfield {
+        .footer {
+            margin-top: 10px;
+            .copyrigth {
+                font-size: 0.9em;
+            }
+            .listSocial {
+                margin-top: -17px;
+                margin-right: 10px;
+                .social-item {
+                    .social-link {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 453px) {
+    .starfield {
+        .footer {
+            margin-top: 40px;
+            @include flex (column);
+            .copyrigth {
+                font-size: 1.0em;
+                
+            }
+            .listSocial {
+                margin-top: 17px;
+                padding-bottom: 20px;
+                margin-right: 10px;
+                .social-item {
+                    .social-link {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tes {
+        .footer {
+            .copyrigth {
+                font-size: 1.2em;
+            }
+            .listSocial {
+                column-gap: 15px;
+                margin-top: -19px;
+                .social-item {
+                    .social-link {
+                        font-size: 1.0em;
+                    }
+                }
+            }
+        }
+    }
+    .fallout {
+        .footer {
+            @include flex (column);
+            padding-right: 20px;
+            padding-left: 20px;
+            .listSocial {
+                column-gap: 15px;
+                margin-top: 12px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tes, .fallout, .starfield {
+        .navbar {
+            .navbar-brand {
+                .img-fluid {
+                    height: 120px;
+                    max-width: 240px;
+                }
+            }
+            #btnBars {
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .tes {
+        .footer {
+            @include flex (column);
+            .copyrigth {
+                font-size: 1.4em;
+            }
+            .listSocial {
+                column-gap: 15px;
+                margin-top: -12px;
+                padding-bottom: 22px;
+                .social-item {
+                    .social-link {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .starfield {
+        .footer {
+            @include flex (column);
+            .copyrigth {
+                font-size: 0.9em;
+            }
+            .listSocial {
+                column-gap: 15px;
+                margin-top: 10px;
+                padding-bottom: 22px;
+                .social-item {
+                    .social-link {
+                        font-size: 1.3em;
                     }
                 }
             }

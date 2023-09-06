@@ -258,7 +258,6 @@ body {
 }
 
 .tes {
-  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -326,7 +325,7 @@ body {
 .tes .showGame .containGame .row .col-lg-8 h2 {
   font-size: 2.5em;
   color: azure;
-  text-shadow: 0px 3px 2px #000000;
+  text-shadow: 4px 3px 8px #6d0303;
 }
 .tes .showGame .containGame .row .col-lg-8 .listType {
   margin-left: -20px;
@@ -344,8 +343,10 @@ body {
 .tes .showGame .containGame .row .col-lg-8 p {
   overflow: auto;
   line-height: 55px;
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: azure;
+  font-family: planewalker;
+  text-shadow: 0px 3px 2px #000000;
 }
 .tes .showGame .containGame video {
   margin: 50px auto;
@@ -369,6 +370,37 @@ body {
 }
 .tes .showGame .containGame #btnBuy:active {
   transform: translateY(10px);
+}
+.tes .footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.tes .footer .copyrigth {
+  font-size: 1.6em;
+  color: azure;
+  font-family: planewalker;
+}
+.tes .footer .listSocial {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+.tes .footer .listSocial .social-item .social-link {
+  opacity: 0.7;
+  font-size: 1.3em;
+  color: azure;
+  text-decoration: none;
+}
+.tes .footer .listSocial .social-item .social-link:hover {
+  opacity: 1;
 }
 
 .fallout {
@@ -439,7 +471,7 @@ body {
 .fallout .showGame .containGame .row .col-lg-8 h2 {
   font-size: 2.5em;
   color: azure;
-  text-shadow: 0px 3px 2px #000000;
+  text-shadow: 4px 3px 8px #6d0303;
 }
 .fallout .showGame .containGame .row .col-lg-8 .listType {
   margin-left: -20px;
@@ -457,8 +489,10 @@ body {
 .fallout .showGame .containGame .row .col-lg-8 p {
   overflow: auto;
   line-height: 45px;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: azure;
+  font-family: overseer;
+  text-shadow: 0px 3px 2px #000000;
 }
 .fallout .showGame .containGame video {
   margin: 50px auto;
@@ -482,6 +516,37 @@ body {
 }
 .fallout .showGame .containGame #btnBuy:active {
   transform: translateY(10px);
+}
+.fallout .footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.fallout .footer .copyrigth {
+  font-size: 1.6em;
+  color: azure;
+  font-family: overseer;
+}
+.fallout .footer .listSocial {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+.fallout .footer .listSocial .social-item .social-link {
+  opacity: 0.7;
+  font-size: 1.3em;
+  color: azure;
+  text-decoration: none;
+}
+.fallout .footer .listSocial .social-item .social-link:hover {
+  opacity: 1;
 }
 
 .starfield {
@@ -549,7 +614,7 @@ body {
 .starfield .showGame .containGame .row .col-lg-8 h2 {
   font-size: 2.5em;
   color: azure;
-  text-shadow: 0px 3px 2px #000000;
+  text-shadow: 4px 3px 8px #6d0303;
 }
 .starfield .showGame .containGame .row .col-lg-8 .listType {
   margin-left: -20px;
@@ -566,8 +631,10 @@ body {
 }
 .starfield .showGame .containGame .row .col-lg-8 p {
   line-height: 50px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: azure;
+  font-family: conthrax;
+  text-shadow: 0px 3px 2px #000000;
 }
 .starfield .showGame .containGame video {
   margin: 50px auto;
@@ -592,6 +659,37 @@ body {
 .starfield .showGame .containGame #btnBuy:active {
   transform: translateY(10px);
 }
+.starfield .footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.starfield .footer .copyrigth {
+  font-size: 1.6em;
+  color: azure;
+  font-family: conthrax;
+}
+.starfield .footer .listSocial {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+.starfield .footer .listSocial .social-item .social-link {
+  opacity: 0.7;
+  font-size: 1.3em;
+  color: azure;
+  text-decoration: none;
+}
+.starfield .footer .listSocial .social-item .social-link:hover {
+  opacity: 1;
+}
 
 @font-face {
   font-family: planewalker;
@@ -608,5 +706,191 @@ body {
 @media screen and (max-width: 1440px) {
   .show #carouselExampleCaptions .carousel-inner .carousel-item #tesShow #btnShow.show {
     margin-left: 320px;
+  }
+  .tes .showGame .containGame .row .col-lg-8, .fallout .showGame .containGame .row .col-lg-8, .starfield .showGame .containGame .row .col-lg-8 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    margin-left: -5%;
+  }
+  .tes .showGame .containGame .row .col-lg-8 h2, .fallout .showGame .containGame .row .col-lg-8 h2, .starfield .showGame .containGame .row .col-lg-8 h2 {
+    font-size: 1.7em;
+  }
+  .tes .showGame .containGame .row .col-lg-8 p, .fallout .showGame .containGame .row .col-lg-8 p, .starfield .showGame .containGame .row .col-lg-8 p {
+    line-height: 45px;
+  }
+  .fallout .footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .fallout .footer .listSocial {
+    margin-top: -14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .tes .showGame .containGame .row .col-lg-8, .fallout .showGame .containGame .row .col-lg-8, .starfield .showGame .containGame .row .col-lg-8 {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    margin-left: -1%;
+  }
+  .tes .showGame .containGame .row .col-lg-8 h2, .fallout .showGame .containGame .row .col-lg-8 h2, .starfield .showGame .containGame .row .col-lg-8 h2 {
+    font-size: 1.6em;
+  }
+  .tes .showGame .containGame .row .col-lg-8 p, .fallout .showGame .containGame .row .col-lg-8 p, .starfield .showGame .containGame .row .col-lg-8 p {
+    line-height: 35px;
+  }
+  .tes .showGame .containGame video, .fallout .showGame .containGame video, .starfield .showGame .containGame video {
+    width: 89%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tes .navbar #btnBars, .fallout .navbar #btnBars, .starfield .navbar #btnBars {
+    display: block;
+    margin-right: 10px;
+  }
+  .tes .navbar .navbar-nav, .fallout .navbar .navbar-nav, .starfield .navbar .navbar-nav {
+    display: none;
+  }
+  .tes .showGame .containGame .row .col-lg-8, .fallout .showGame .containGame .row .col-lg-8, .starfield .showGame .containGame .row .col-lg-8 {
+    margin-top: 10px;
+  }
+  .tes .showGame .containGame .row .col-lg-8 h2, .fallout .showGame .containGame .row .col-lg-8 h2, .starfield .showGame .containGame .row .col-lg-8 h2 {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  .tes .showGame .containGame .row .col-lg-8 p, .fallout .showGame .containGame .row .col-lg-8 p, .starfield .showGame .containGame .row .col-lg-8 p {
+    text-align: center;
+    line-height: 40px;
+  }
+  .tes .showGame .containGame video, .fallout .showGame .containGame video, .starfield .showGame .containGame video {
+    margin-top: -20px;
+    width: 89%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tes .footer .copyrigth {
+    font-size: 1.3em;
+  }
+  .tes .footer .listSocial {
+    margin-top: -17px;
+  }
+  .tes .footer .listSocial .social-item .social-link {
+    font-size: 1.2em;
+  }
+  .starfield .footer .copyrigth {
+    font-size: 1.1em;
+  }
+  .starfield .footer .listSocial {
+    margin-top: -17px;
+    margin-right: 10px;
+  }
+  .starfield .footer .listSocial .social-item .social-link {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 515px) {
+  .starfield .footer {
+    margin-top: 10px;
+  }
+  .starfield .footer .copyrigth {
+    font-size: 0.9em;
+  }
+  .starfield .footer .listSocial {
+    margin-top: -17px;
+    margin-right: 10px;
+  }
+  .starfield .footer .listSocial .social-item .social-link {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 453px) {
+  .starfield .footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .starfield .footer .copyrigth {
+    font-size: 1em;
+  }
+  .starfield .footer .listSocial {
+    margin-top: 17px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+  }
+  .starfield .footer .listSocial .social-item .social-link {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .tes .footer .copyrigth {
+    font-size: 1.2em;
+  }
+  .tes .footer .listSocial {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    margin-top: -19px;
+  }
+  .tes .footer .listSocial .social-item .social-link {
+    font-size: 1em;
+  }
+  .fallout .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .fallout .footer .listSocial {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    margin-top: 12px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .tes .navbar .navbar-brand .img-fluid, .fallout .navbar .navbar-brand .img-fluid, .starfield .navbar .navbar-brand .img-fluid {
+    height: 120px;
+    max-width: 240px;
+  }
+  .tes .navbar #btnBars, .fallout .navbar #btnBars, .starfield .navbar #btnBars {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .tes .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tes .footer .copyrigth {
+    font-size: 1.4em;
+  }
+  .tes .footer .listSocial {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    margin-top: -12px;
+    padding-bottom: 22px;
+  }
+  .tes .footer .listSocial .social-item .social-link {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .starfield .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .starfield .footer .copyrigth {
+    font-size: 0.9em;
+  }
+  .starfield .footer .listSocial {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    margin-top: 10px;
+    padding-bottom: 22px;
+  }
+  .starfield .footer .listSocial .social-item .social-link {
+    font-size: 1.3em;
   }
 }/*# sourceMappingURL=styles.css.map */
